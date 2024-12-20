@@ -77,8 +77,8 @@ export default function Header() {
         <header>
             <nav className="container flex flex-sb">
                 <div className="logo flex gap-2">
-                    <Link href='/'><img src={`/img/${darkMode ? "white" : "logo"}.png`} alt="" /></Link>
-                    <h2>vbmcoder@gmail.com</h2>
+                    <Link href='/'><img src={`/img/${darkMode ? "logoW" : "logoD"}.png`} alt="" /></Link>
+                    <h2>melissafenzifenzi@gmail.com</h2>
                 </div>
                 <div className="navlist flex gap-2">
                     <ul className="flex gap-2">

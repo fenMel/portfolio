@@ -148,10 +148,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>vbmcoder - Personal Portfolio</title>
+        <title>Portfolio</title>
         <meta name="description" content="vbmcoder - Personal Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <link rel="shortcut icon" type="image/png" href="/logo.png" />
       </Head>
 
       {/* hero section */}
@@ -164,14 +164,14 @@ export default function Home() {
         <div className="container">
           <div className="flex w-100">
             <div className="heroinfoleft">
-              <span className="hero_sb_title" data-aos="fade-right" >I am vbmcoder</span>
+              <span className="hero_sb_title" data-aos="fade-right" >Je suis FENZI Melissa</span>
               <h1 className="hero_title" data-aos="fade-right" >Web Developer + <br /> <span className="typed-text">UX Designer</span> </h1>
               <div className="hero_img_box heroimgbox" data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <img src="/img/me.jpg" alt="" />
               </div>
-              <div className="lead" data-aos="fade-up"  >I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</div>
+              <div className="lead" data-aos="fade-up"  >Apprenante en deuxième année de BTS Services Informatiques aux Organisations (SIO) options en SLAM (Solutions Logicielles et Applications Métier) à l'école ESIC et en alternance avec MABINTECH SERVICE</div>
               <div className="hero_btn_box" data-aos="fade-up">
                 <Link href='/' download={'/img/resume.pdf'} className="download_cv">Download CV <BiDownload /></Link>
                 <ul className="hero_social">
