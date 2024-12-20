@@ -61,14 +61,18 @@ const Preloader = ({ isLoading }) => {
 
             <div className="preloader-heading">
                 <div className="load-text">
-                    <span>V</span>
-                    <span>B</span>
-                    <span>M</span>
-                    <span>C</span>
-                    <span>O</span>
-                    <span>D</span>
+                    <span>F</span>
                     <span>E</span>
-                    <span>R</span>
+                    <span>N</span>
+                    <span>Z</span>
+                    <span>I</span>
+                    <span> M</span>
+                    <span>E</span>
+                    <span>L</span>
+                    <span>I</span>
+                    <span>S</span>
+                    <span>S</span>
+                    <span>A</span>
                 </div>
             </div>
         </div>
