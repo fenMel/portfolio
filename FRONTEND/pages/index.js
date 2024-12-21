@@ -174,7 +174,7 @@ export default function Home() {
               <div className="hero_img_box heroimgbox" data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
-                <img src="/img/melissa.jpg" alt="" />
+                <img src="/img/melissa.png"  />
               </div>
               <div className="lead" data-aos="fade-up"  >Apprenante en deuxième année de BTS Services Informatiques aux Organisations (SIO) options en SLAM (Solutions Logicielles et Applications Métier) à l'école ESIC et en alternance avec MABINTECH SERVICE</div>
               <div className="hero_btn_box" data-aos="fade-up">
@@ -601,7 +601,7 @@ export default function Home() {
       <section className="recentblogs">
         <div className="container">
           <div className="myskills_title">
-            <h2 data-aos="fade-up">Recent Blogs</h2>
+            <h2 data-aos="fade-up">veille technologique</h2>
             <p data-aos="fade-up">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
           </div>
           <div className="recent_blogs">
