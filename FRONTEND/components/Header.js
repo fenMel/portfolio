@@ -100,14 +100,14 @@ export default function Header() {
                         <li><Link href="/shop"
                             className={activeLink === '/shop' ? 'active' : ''}
                             onClick={() => handleLinkClick('/shop')}>Shop</Link></li> */}
-                        <li><Link href="/contact"
+                        <button><Link href="/contact"
                             className={activeLink === '/contact' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/contact')}>Contact</Link></li>
+                            onClick={() => handleLinkClick('/contact')}>Contact</Link></button>
                     </ul>
-                    <div className="darkmodetoggle" onClick={toggleDarkMode}>
+                    {/* <div className="darkmodetoggle" onClick={toggleDarkMode}>
                         {darkMode ? <IoMoonSharp /> : <LuSun />}
-                    </div>
-                    <button><Link href='/contact'>Hire Me!</Link></button>
+                    </div> */}
+                    
                     <div className="mobiletogglesvg" onClick={handleMobileOpen}>
                         <HiMiniBars3BottomRight />
                     </div>
@@ -141,7 +141,7 @@ export default function Header() {
                             className={activeLink === '/contact' ? 'active' : ''}
                             onClick={() => handleLinkClick('/contact')}>Contact</Link></li>
                     </ul>
-                    <p>Copyright &copy; 2024 | vbmcoder.in</p>
+                    <p>Copyright &copy; 2024 | FenziMelissa</p>
                 </div>
             </nav>
         </header>

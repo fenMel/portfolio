@@ -16,6 +16,90 @@ import Typed from 'typed.js';
 export default function Home() {
 
 
+
+
+  const [selectedCategoryskill, setSelectedCategoryskill] = useState("All");
+
+  // Données pour les technologies et outils
+  const skillsData = [
+    {
+      category: "Frameworks",
+      items: [
+        { name: "Spring Boot", img: "/img/springBoot.png" },
+        { name: "Angular", img: "/img/anuglar.png" },
+      ],
+    },
+    {
+      category: "Langages",
+      items: [
+        { name: "Java", img: "/img/java.webp" },
+        { name: "PHP", img: "/img/php.png" },
+        { name: "JavaScript", img: "/img/js.svg" },
+        { name: "HTML & CSS", img: "/img/htmlcss.png" },
+        { name: "XML", img: "/img/xml.png" },
+      ],
+    },
+    {
+      category: "Outils de Test",
+      items: [
+        { name: "Postman", img: "/img/postman.png" },
+        { name: "JUnit", img: "/img/jUnit.png" },
+      ],
+    },
+    {
+      category: "Bases de Données",
+      items: [
+        { name: "phpMyAdmin", img: "/img/phpMyadmin.png" },
+        { name: "MySQL", img: "/img/mysql.png" },
+        { name: "MongoDB", img: "/img/mongodb.svg" },
+      ],
+    },
+    {
+      category: "Cloud et DevOps",
+      items: [
+        { name: "AWS Amazon", img: "/img/aws.png" },
+        { name: "Docker", img: "/img/Docker.png" },
+      ],
+    },
+    {
+      category: "Outils de Gestion",
+      items: [
+        { name: "Jira & Confluence", img: "/img/jiraConfulence.png" },
+        { name: "Trello", img: "/img/trello.png" },
+        { name: "GanttProject", img: "/img/gant.png" },
+      ],
+    },
+    {
+      category: "Automatisation",
+      items: [
+        { name: "GitHub", img: "/img/github.svg" },
+        { name: "GitLab", img: "/img/gitlab.svg" },
+        { name: "CI/CD", img: "/img/ciCd.svg" },
+      ],
+    },
+    {
+      category: "Hébergeurs Web",
+      items: [
+        { name: "InfinityFree", img: "/img/infifree.svg" },
+        { name: "OVH", img: "/img/ovh.png" },
+        { name: "AlwaysData", img: "/img/alwaysData.png" },
+        { name: "WordPress", img: "/img/wordpress.png" },
+        { name: "Apache", img: "/img/apache.png" },
+        { name: "Nginx", img: "/img/nginx.svg" },
+      ],
+    },
+  ];
+
+  // Filtrage des technologies et outils
+  const filteredSkills =
+    selectedCategoryskill === "All"
+      ? skillsData.flatMap((data) => data.items)
+      : skillsData.find((data) => data.category === selectedCategoryskill)?.items || [];
+
+
+
+
+
   // activeservice background color
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -313,288 +397,130 @@ export default function Home() {
         </div>
       </section>
 
-   <section className="myskills">
+ {/*  outils et tech */}
+ 
+ <section className={`technologies ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
   <div className="container">
-    <div className="myskills_title">
+    {/* Titre et description */}
+    <div className="project_titles">
       <h2 data-aos="fade-up">Technologies et Outils</h2>
+      <p data-aos="fade-up">
+        Découvrez les technologies et outils que j'utilise pour développer
+        des solutions performantes, modernes et adaptées à vos besoins.
+      </p>
     </div>
 
-    {/* Frameworks */}
-    <div className="skill_category">
-      <div className="project_titles">
-        <p data-aos="fade-up">Frameworks</p>
-      </div>
-      <div className="myskils_cards">
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/springBoot.png" alt="Spring Boot" />
-          </div>
-          <p className="text-center">Spring Boot</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/anuglar.png" alt="Angular" />
-          </div>
-          <p className="text-center">Angular</p>
-        </div>
-      </div>
-    </div>
-
-    {/* Langages */}
-    <div className="skill_category">
-      <div className="project_titles">
-        <p data-aos="fade-up">Langages de Programmation</p>
-      </div>
-      <div className="myskils_cards">
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/java.webp" alt="Java" />
-          </div>
-          <p className="text-center">Java</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/php.png" alt="PHP" />
-          </div>
-          <p className="text-center">PHP</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/js.svg" alt="JavaScript" />
-          </div>
-          <p className="text-center">JavaScript</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/htmlcss.png" alt="HTML & CSS" />
-          </div>
-          <p className="text-center">HTML & CSS</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/xml.png" alt="XML" />
-          </div>
-          <p className="text-center">XML</p>
-        </div>
+    {/* Boutons de filtrage avec défilement horizontal */}
+    <div
+      className="project_buttons"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0"
+    >
+      <div className="scrollable_buttons">
+        <button
+          className={selectedCategoryskill === "All" ? "active" : ""}
+          onClick={() => setSelectedCategoryskill("All")}
+        >
+          All
+        </button>
+        {skillsData.map((data, index) => (
+          <button
+            key={index}
+            className={selectedCategoryskill === data.category ? "active" : ""}
+            onClick={() => setSelectedCategoryskill(data.category)}
+          >
+            {data.category}
+          </button>
+        ))}
       </div>
     </div>
 
-    {/* Environnements de Développement et Éditeurs de Code */}
-    <div className="skill_category">
-      <div className="project_titles">
-        <p data-aos="fade-up">Environnements de Développement et Éditeurs de Code</p>
-      </div>
-      <div className="myskils_cards">
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/vsCode.png" alt="VS Code" />
+    {/* Cartes des technologies et outils */}
+    <div className="projects_cards">
+      {filteredSkills.length === 0 ? (
+        <h1 className="w-100 flex flex-center mt-3">
+          Aucun outil trouvé dans cette catégorie
+        </h1>
+      ) : (
+        filteredSkills.map((skill, index) => (
+          <div
+            key={index}
+            className="procard"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <div className="proimgbox">
+              <img src={skill.img} alt={skill.name} />
+            </div>
+            <div className="procontentbox">
+              <h2>{skill.name}</h2>
+            </div>
           </div>
-          <p className="text-center">VS Code</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/eclipse.svg" alt="Eclipse" />
-          </div>
-          <p className="text-center">Eclipse</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/IntelliJ.png" alt="IntelliJ IDEA" />
-          </div>
-          <p className="text-center">IntelliJ IDEA</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/Notepad.png" alt="Notepad++" />
-          </div>
-          <p className="text-center">Notepad++</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/AlgoBox.png" alt="Algobox" />
-          </div>
-          <p className="text-center">Algobox</p>
-        </div>
-      </div>
-    </div>
-
-    {/* Outils de Test */}
-    <div className="skill_category">
-      <div className="project_titles">
-        <p data-aos="fade-up">Outils de Test</p>
-      </div>
-      <div className="myskils_cards">
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/postman.png" alt="Postman" />
-          </div>
-          <p className="text-center">Postman</p>
-        </div>
-      
-      <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/jUnit.png" alt="Junit" />
-          </div>
-          <p className="text-center">Junit</p>
-        </div>
-      </div>
-    </div>
-
-    {/* Outils de Base de Données */}
-    <div className="skill_category">
-      <div className="project_titles">
-        <p data-aos="fade-up">Outils de Base de Données</p>
-      </div>
-      <div className="myskils_cards">
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/phpMyadmin.png" alt="phpMyAdmin" />
-          </div>
-          <p className="text-center">phpMyAdmin</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/mysql.png" alt="MySQL" />
-          </div>
-          <p className="text-center">MySQL</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/mongodb.svg" alt="MongoDB" />
-          </div>
-          <p className="text-center">MongoDB</p>
-        </div>
-      </div>
-    </div>
-
-    {/* Hébergement Web */}
-    <div className="skill_category">
-      <div className="project_titles">
-        <p data-aos="fade-up">Hébergement Web</p>
-      </div>
-      <div className="myskils_cards">
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/infifree.svg" alt="InfinityFree" />
-          </div>
-          <p className="text-center">InfinityFree</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/ovh.png" alt="OVH" />
-          </div>
-          <p className="text-center">OVH</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/alwaysData.png" alt="AlwaysData" />
-          </div>
-          <p className="text-center">AlwaysData</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/wordpress.png" alt="WordPress" />
-          </div>
-          <p className="text-center">WordPress</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/apache.png" alt="Apache" />
-          </div>
-          <p className="text-center">Apache</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/nginx.svg" alt="Nginx" />
-          </div>
-          <p className="text-center">Nginx</p>
-        </div>
-      </div>
-    </div>
-
-    {/* Cloud et DevOps */}
-    <div className="skill_category">
-      <div className="project_titles">
-        <p data-aos="fade-up">Cloud et DevOps</p>
-      </div>
-      <div className="myskils_cards">
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/aws.png" alt="AWS Amazon" />
-          </div>
-          <p className="text-center">AWS Amazon</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/Docker.png" alt="Docker" />
-          </div>
-          <p className="text-center">Docker</p>
-        </div>
-      </div>
-    </div>
-
-    {/* Gestion de Code Source et Automatisation */}
-    <div className="skill_category">
-      <div className="project_titles">
-        <p data-aos="fade-up">Gestion de Code Source et Automatisation</p>
-      </div>
-      <div className="myskils_cards">
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/github.svg" alt="GitHub" />
-          </div>
-          <p className="text-center">GitHub</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/gitlab.svg" alt="GitLab" />
-          </div>
-          <p className="text-center">GitLab</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/ciCd.svg" alt="CI/CD" />
-          </div>
-          <p className="text-center">CI/CD</p>
-        </div>
-      </div>
-    </div>
-
-    {/* Outils de Collaboration */}
-    <div className="skill_category">
-      <div className="project_titles">
-        <p data-aos="fade-up">Outils de Collaboration et Gestion</p>
-      </div>
-      <div className="myskils_cards">
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/jiraConfulence.png" alt="Jira & Confluence" />
-          </div>
-          <p className="text-center">Jira & Confluence</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/trello.png" alt="Trello" />
-          </div>
-          <p className="text-center">Trello</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/umlet.svg" alt="UMLet" />
-          </div>
-          <p className="text-center">UMLet</p>
-        </div>
-        <div className="mys_card">
-          <div className="mys_inner">
-            <img src="/img/gant.png" alt="GanttProject" />
-          </div>
-          <p className="text-center">GanttProject</p>
-        </div>
-      </div>
+        ))
+      )}
     </div>
   </div>
-</section>
 
+  {/* Styles */}
+  <style jsx>{`
+    /* Boutons avec défilement horizontal */
+    .scrollable_buttons {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding: 10px 0;
+      scrollbar-width: thin;
+    }
+
+    .scrollable_buttons button {
+     
+      padding: 10px 20px;
+    
+      
+     
+    }
+
+    .scrollable_buttons button.active {
+      background: #4a47d6;
+      color: #fff;
+    }
+
+    .scrollable_buttons button:hover {
+      background: #4a47d6;
+      transform: scale(1.05);
+    }
+
+    .scrollable_buttons::-webkit-scrollbar {
+      height: 6px; /* Hauteur de la scrollbar */
+    }
+
+    .scrollable_buttons::-webkit-scrollbar-thumb {
+      background: #6c63ff; /* Couleur de la barre */
+      border-radius: 10px;
+    }
+
+    .scrollable_buttons::-webkit-scrollbar-track {
+      background:rgba(207, 85, 244, 0.36); /* Couleur de l'arrière-plan */
+    }
+
+    /* Cartes des technologies */
+    .procard {
+      width: 30%;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .projects_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+  `}</style>
+</section>
 
 
       {/* Recent Blogs */}
