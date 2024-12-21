@@ -17,6 +17,7 @@ export default async function handle(req, res) {
         })
 
         res.json(productDoc)
+        console.log("post depuis le back : "+res.json(productDoc));
     }
 
     if (method === 'GET') {
