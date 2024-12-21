@@ -28,6 +28,7 @@ body {
 
 .hero_img_box img {
     content: var(--image-url);
+    width: 482.2px;
 }
 
 body .dark {

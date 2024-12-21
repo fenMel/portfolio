@@ -33,20 +33,25 @@ export default function Home() {
   // services data
   const services = [
     {
-      title: "Web Development",
-      description: "I am very good in web development offering services, I offer reliable web development services to generate the most remarkable results which your business need."
+      title: "Langages de programmation",
+      description: "Maîtrise de HTML, CSS, JavaScript, PHP et Java pour le développement front-end et back-end, ainsi que la création d'applications robustes et dynamiques."
     },
     {
-      title: "Mobile Development",
-      description: "Experienced mobile developer offering innovative solutions. Proficient in creating high-performance, user-centric mobile apps. Expertise in iOS, Android, and cross-platform development."
+      title: "Frameworks et outils",
+      description: "Expertise en Angular et Bootstrap pour des interfaces modernes, utilisation avancée de Docker pour la conteneurisation, et gestion du code avec GitLab. Familiarité avec les outils de conception comme Figma et les environnements cloud tels qu'AWS Amazon."
     },
     {
-      title: "Digital Marketing(SEO)",
-      description: "My digital marketing services will take your business to the next level, we offer remarkable digital marketing strategies that drives traffic to your website, your business, and improves your brand awareness to potential customers."
+      title: "Gestion de projets",
+      description: "Expérience avec Jira et Confluence pour la gestion agile, planification et organisation des tâches, et documentation collaborative."
     },
     {
-      title: "Content Creator",
-      description: "Passionate photographer and videographer capturing moments with creativity. Transforming visions into visual stories. Expert in visual storytelling, skilled in both photography and videography to deliver captivating content."
+      title: "Techniques (Soft Skills Techniques",
+      description: "Je maîtrise l’administration des bases de données, la résolution de problèmes techniques, et la mise en place de pipelines CI/CD pour garantir des systèmes performants, fiables et adaptés au développement agile."
+    },
+   
+    {
+      title: "Interpersonnelles (Soft Skills)",
+      description: "Je privilégie le travail en équipe, la communication claire de concepts techniques et une gestion efficace du temps pour garantir la productivité et le respect des échéances"
     }
   ];
 
@@ -169,16 +174,14 @@ export default function Home() {
               <div className="hero_img_box heroimgbox" data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
-                <img src="/img/me.jpg" alt="" />
+                <img src="/img/melissa.png"  />
               </div>
               <div className="lead" data-aos="fade-up"  >Apprenante en deuxième année de BTS Services Informatiques aux Organisations (SIO) options en SLAM (Solutions Logicielles et Applications Métier) à l'école ESIC et en alternance avec MABINTECH SERVICE</div>
               <div className="hero_btn_box" data-aos="fade-up">
                 <Link href='/' download={'/img/resume.pdf'} className="download_cv">Download CV <BiDownload /></Link>
                 <ul className="hero_social">
-                  <li><a href="/"><FaTwitter /></a></li>
-                  <li><a href="/"><LiaBasketballBallSolid /></a></li>
-                  <li><a href="/"><GrLinkedinOption /></a></li>
-                  <li><a href="/"><FaGithub /></a></li>
+                  <li><a href="https://fr.linkedin.com/in/fenzi-melissa-b41275290"><GrLinkedinOption /></a></li>
+                  <li><a href="https://github.com/melfe28"><FaGithub /></a></li>
                 </ul>
               </div>
             </div>
@@ -186,30 +189,22 @@ export default function Home() {
               <div className="hero_img_box" data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
-                <img src='/img/me.png' alt="" />
+                <img src='/img/melissa.png' alt="" />
               </div>
             </div>
           </div>
           <div className="funfect_area flex flex-sb">
             <div className="funfect_item" data-aos="fade-right">
-              <h3>7+</h3>
-              <h4>Years of <br />
-                Experience</h4>
+              <h3>1+</h3>
+              <h4>Années<br />
+                D'expérience</h4>
             </div>
             <div className="funfect_item" data-aos="fade-right">
-              <h3>20+</h3>
-              <h4>Projects <br />
-                Completed</h4>
-            </div>
-            <div className="funfect_item" data-aos="fade-left">
-              <h3>12</h3>
-              <h4>OpenSource <br />
-                Library</h4>
-            </div>
-            <div className="funfect_item" data-aos="fade-left">
-              <h3>20+</h3>
-              <h4>Happy <br />
-                Customers</h4>
+              <h3>5+</h3>
+              <h4>Projects</h4>
+            </div><div className="funfect_item" data-aos="fade-right">
+              <h3>BTS</h3>
+              <h4> SIO<br />Option SLAM</h4>
             </div>
           </div>
         </div>
@@ -219,8 +214,8 @@ export default function Home() {
       <section className="services">
         <div className="container">
           <div className="services_titles">
-            <h2 data-aos="fade-up">My Quality Services</h2>
-            <p data-aos="fade-up">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+            <h2 data-aos="fade-up">Mes Compétences</h2>
+            <p data-aos="fade-up">Je possède une expertise diversifiée en développement web et en gestion de projets, avec des compétences techniques, organisationnelles et interpersonnelles qui me permettent de contribuer efficacement à tout type de projet :</p>
           </div>
           <div className="services_menu" data-aos="fade-up">
             {services.map((service, index) => (
@@ -248,7 +243,7 @@ export default function Home() {
       <section className="projects">
         <div className="container">
           <div className="project_titles">
-            <h2 data-aos="fade-up">My Recent Works</h2>
+            <h2 data-aos="fade-up">Mes Projets</h2>
             <p data-aos="fade-up">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
           </div>
           <div className="project_buttons" data-aos="fade-zoom-in"
@@ -292,111 +287,321 @@ export default function Home() {
           <div className="experience">
             <div className="experience_title flex gap-1" data-aos="fade-right">
               <LuMedal />
-              <h2>My Experience</h2>
+              <h2>Mon Expérience</h2>
             </div>
             <div className="exper_cards">
               <div className="exper_card" data-aos="fade-up">
-                <span>2020 - Present</span>
-                <h3>DVTECH IT SOLUTION.</h3>
-                <p>Full Stack Mobile Developer</p>
-              </div>
-              <div className="exper_card" data-aos="fade-up">
-                <span>2018-2020</span>
-                <h3>BICKDRIMS LLC.</h3>
-                <p>Front-End Developer(Internship)</p>
-              </div>
-              <div className="exper_card" data-aos="fade-up">
-                <span>2021-2023</span>
-                <h3>VAGALLY LLC.</h3>
-                <p>Full-Stack Developer</p>
-              </div>
-              <div className="exper_card" data-aos="fade-up">
-                <span>2021-2024</span>
-                <h3>LEAD DEVELOPER</h3>
-                <p>Blockdots, United State</p>
+                <span>2023-2025</span>
+                <h3>MABINTECH SERVICES</h3>
+                <p>Apprenti Technicienne Système d'Information</p>
               </div>
             </div>
           </div>
           <div className="education">
             <div className="experience_title flex gap-1" data-aos="fade-left">
               <PiGraduationCap />
-              <h2>My Education</h2>
+              <h2>Cursus Scolaire</h2>
             </div>
             <div className="exper_cards">
               <div className="exper_card" data-aos="fade-up">
-                <span>2018 - 2020</span>
-                <h3>BSC COMPUTER SCIENCE</h3>
-                <p>IMIT</p>
-              </div>
-              <div className="exper_card" data-aos="fade-up">
-                <span>2021-2022</span>
-                <h3>London Institute Of Management & Information Technology University.</h3>
-                <p>Degree in Computing and information system (ABMA Level 500)</p>
+                <span>2023-2025</span>
+                <h3>Esic</h3>
+                <p>BTS SIO option SLAM</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* My Skills */}
-      <section className="myskills">
-        <div className="container">
-          <div className="myskills_title">
-            <h2 data-aos="fade-up">My Skills</h2>
-            <p data-aos="fade-up">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+   <section className="myskills">
+  <div className="container">
+    <div className="myskills_title">
+      <h2 data-aos="fade-up">Technologies et Outils</h2>
+    </div>
+
+    {/* Frameworks */}
+    <div className="skill_category">
+      <div className="project_titles">
+        <p data-aos="fade-up">Frameworks</p>
+      </div>
+      <div className="myskils_cards">
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/springBoot.png" alt="Spring Boot" />
           </div>
-          <div className="myskils_cards">
-            <div className="mys_card" data-aos="fade-right">
-              <div className="mys_inner">
-                <img src="/img/python.svg" alt="" />
-                <h3>92%</h3>
-              </div>
-              <p className="text-center">Python</p>
-            </div>
-            <div className="mys_card" data-aos="fade-right">
-              <div className="mys_inner">
-                <img src="/img/firebase.svg" alt="" />
-                <h3>80%</h3>
-              </div>
-              <p className="text-center">Firebase</p>
-            </div>
-            <div className="mys_card" data-aos="fade-right">
-              <div className="mys_inner">
-                <img src="/img/mongodb.svg" alt="" />
-                <h3>98%</h3>
-              </div>
-              <p className="text-center">MongoDB</p>
-            </div>
-            <div className="mys_card" data-aos="fade-left">
-              <div className="mys_inner">
-                <img src="/img/redux.svg" alt="" />
-                <h3>85%</h3>
-              </div>
-              <p className="text-center">Redux</p>
-            </div>
-            <div className="mys_card" data-aos="fade-left">
-              <div className="mys_inner">
-                <img src="/img/react.svg" alt="" />
-                <h3>99%</h3>
-              </div>
-              <p className="text-center">React</p>
-            </div>
-            <div className="mys_card" data-aos="fade-left">
-              <div className="mys_inner">
-                <img src="/img/js.svg" alt="" />
-                <h3>99%</h3>
-              </div>
-              <p className="text-center">JavaScript</p>
-            </div>
-          </div>
+          <p className="text-center">Spring Boot</p>
         </div>
-      </section>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/anuglar.png" alt="Angular" />
+          </div>
+          <p className="text-center">Angular</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Langages */}
+    <div className="skill_category">
+      <div className="project_titles">
+        <p data-aos="fade-up">Langages de Programmation</p>
+      </div>
+      <div className="myskils_cards">
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/java.webp" alt="Java" />
+          </div>
+          <p className="text-center">Java</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/php.png" alt="PHP" />
+          </div>
+          <p className="text-center">PHP</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/js.svg" alt="JavaScript" />
+          </div>
+          <p className="text-center">JavaScript</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/htmlcss.png" alt="HTML & CSS" />
+          </div>
+          <p className="text-center">HTML & CSS</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/xml.png" alt="XML" />
+          </div>
+          <p className="text-center">XML</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Environnements de Développement et Éditeurs de Code */}
+    <div className="skill_category">
+      <div className="project_titles">
+        <p data-aos="fade-up">Environnements de Développement et Éditeurs de Code</p>
+      </div>
+      <div className="myskils_cards">
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/vsCode.png" alt="VS Code" />
+          </div>
+          <p className="text-center">VS Code</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/eclipse.svg" alt="Eclipse" />
+          </div>
+          <p className="text-center">Eclipse</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/IntelliJ.png" alt="IntelliJ IDEA" />
+          </div>
+          <p className="text-center">IntelliJ IDEA</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/Notepad.png" alt="Notepad++" />
+          </div>
+          <p className="text-center">Notepad++</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/AlgoBox.png" alt="Algobox" />
+          </div>
+          <p className="text-center">Algobox</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Outils de Test */}
+    <div className="skill_category">
+      <div className="project_titles">
+        <p data-aos="fade-up">Outils de Test</p>
+      </div>
+      <div className="myskils_cards">
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/postman.png" alt="Postman" />
+          </div>
+          <p className="text-center">Postman</p>
+        </div>
+      
+      <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/jUnit.png" alt="Junit" />
+          </div>
+          <p className="text-center">Junit</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Outils de Base de Données */}
+    <div className="skill_category">
+      <div className="project_titles">
+        <p data-aos="fade-up">Outils de Base de Données</p>
+      </div>
+      <div className="myskils_cards">
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/phpMyadmin.png" alt="phpMyAdmin" />
+          </div>
+          <p className="text-center">phpMyAdmin</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/mysql.png" alt="MySQL" />
+          </div>
+          <p className="text-center">MySQL</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/mongodb.svg" alt="MongoDB" />
+          </div>
+          <p className="text-center">MongoDB</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Hébergement Web */}
+    <div className="skill_category">
+      <div className="project_titles">
+        <p data-aos="fade-up">Hébergement Web</p>
+      </div>
+      <div className="myskils_cards">
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/infifree.svg" alt="InfinityFree" />
+          </div>
+          <p className="text-center">InfinityFree</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/ovh.png" alt="OVH" />
+          </div>
+          <p className="text-center">OVH</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/alwaysData.png" alt="AlwaysData" />
+          </div>
+          <p className="text-center">AlwaysData</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/wordpress.png" alt="WordPress" />
+          </div>
+          <p className="text-center">WordPress</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/apache.png" alt="Apache" />
+          </div>
+          <p className="text-center">Apache</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/nginx.svg" alt="Nginx" />
+          </div>
+          <p className="text-center">Nginx</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Cloud et DevOps */}
+    <div className="skill_category">
+      <div className="project_titles">
+        <p data-aos="fade-up">Cloud et DevOps</p>
+      </div>
+      <div className="myskils_cards">
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/aws.png" alt="AWS Amazon" />
+          </div>
+          <p className="text-center">AWS Amazon</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/Docker.png" alt="Docker" />
+          </div>
+          <p className="text-center">Docker</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Gestion de Code Source et Automatisation */}
+    <div className="skill_category">
+      <div className="project_titles">
+        <p data-aos="fade-up">Gestion de Code Source et Automatisation</p>
+      </div>
+      <div className="myskils_cards">
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/github.svg" alt="GitHub" />
+          </div>
+          <p className="text-center">GitHub</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/gitlab.svg" alt="GitLab" />
+          </div>
+          <p className="text-center">GitLab</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/ciCd.svg" alt="CI/CD" />
+          </div>
+          <p className="text-center">CI/CD</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Outils de Collaboration */}
+    <div className="skill_category">
+      <div className="project_titles">
+        <p data-aos="fade-up">Outils de Collaboration et Gestion</p>
+      </div>
+      <div className="myskils_cards">
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/jiraConfulence.png" alt="Jira & Confluence" />
+          </div>
+          <p className="text-center">Jira & Confluence</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/trello.png" alt="Trello" />
+          </div>
+          <p className="text-center">Trello</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/umlet.svg" alt="UMLet" />
+          </div>
+          <p className="text-center">UMLet</p>
+        </div>
+        <div className="mys_card">
+          <div className="mys_inner">
+            <img src="/img/gant.png" alt="GanttProject" />
+          </div>
+          <p className="text-center">GanttProject</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Recent Blogs */}
       <section className="recentblogs">
         <div className="container">
           <div className="myskills_title">
-            <h2 data-aos="fade-up">Recent Blogs</h2>
+            <h2 data-aos="fade-up">veille technologique</h2>
             <p data-aos="fade-up">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
           </div>
           <div className="recent_blogs">
@@ -421,7 +626,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+        
     </>
   );
 }
