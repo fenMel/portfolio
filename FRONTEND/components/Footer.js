@@ -19,12 +19,10 @@ export default function Footer() {
                     <li><Link href='/services'>Contact</Link></li>
                 </ul>
                 <ul className="hero_social">
-                  <li><a target="_blank" href="/"><FaTwitter /></a></li>
-                  <li><a target="_blank" href="/"><LiaBasketballBallSolid /></a></li>
-                  <li><a target="_blank" href="/"><GrLinkedinOption /></a></li>
-                  <li><a target="_blank" href="/"><FaGithub /></a></li>
+                  <li><a target="_blank" href="https://fr.linkedin.com/in/fenzi-melissa-b41275290"><GrLinkedinOption /></a></li>
+                  <li><a target="_blank" href="https://github.com/melfe28"><FaGithub /></a></li>
                 </ul>
-                <div className="copyrights">&copy; 2024 All Rights Reserved By <span>Vbmcoder.in</span></div>
+                <div className="copyrights">&copy; 2024 All Rights Reserved By <span>FenziMelissa</span></div>
             </div>
         </footer>
     </>
