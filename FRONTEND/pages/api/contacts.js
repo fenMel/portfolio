@@ -9,10 +9,10 @@ export default async function handle(req, res) {
 
     if (method === 'POST') {
         try {
-            const { name, lname, email, company, phone, country, project, price, description } = req.body;
-
+            const { name, email, subject, message} = req.body;
+            console.log("Contact : "+req.body)
             const contactDoc = await Contact.create({
-                name, lname, email, company, phone, country, project, price, description
+                name, name, email, subject, message
             });
 
             res.status(201).json(contactDoc); // Respond with 201 Created status

@@ -1,17 +1,14 @@
 const { Schema, models, model } = require("mongoose");
 
-const ProjectSchema = new Schema({
-    name: { type: String, required: true },
-    lname: { type: String },
-    email: { type: String, required: true },
-    company: { type: String },
-    phone: { type: String, required: true},
-    country: { type: String },
-    project: [{ type: String }],
-    price: { type: String },
-    description: { type: String },
+// Définition du schéma pour les contacts
+const ContactSchema = new Schema({
+    name: { type: String, required: true }, // Nom de l'utilisateur
+    email: { type: String, required: true }, // Adresse e-mail
+    subject: { type: String, required: true }, // Sujet du message
+    message: { type: String, required: true }, // Contenu du message
 }, {
-    timestamps: true // This option will automatically manage createdAt and updatedAt fields
+    timestamps: true // Ajoute automatiquement createdAt et updatedAt
 });
 
-export const Contact = models.Contact || model('Contact', ProjectSchema, 'contacts');
+// Exportation du modèle Contact
+export const Contact = models.Contact || model('Contact', ContactSchema, 'contacts');
