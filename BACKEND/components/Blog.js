@@ -142,7 +142,7 @@ export default function Blog(
             </div>
 
             {/* blog category */}
-            <div className='w-100 flex flex-col flex-left mb-2' data-aos="fade-up">
+            {/* <div className='w-100 flex flex-col flex-left mb-2' data-aos="fade-up">
                 <label htmlFor="catergory">Select Category </label>
                 <select onChange={(e) => setBlogcategory(Array.from(e.target.selectedOptions, option => option.value))} name="catergory" id="catergory" multiple value={blogcategory} >
                     <option value="Node js">Node js</option>
@@ -158,7 +158,7 @@ export default function Blog(
                 <p className="existingcategory flex gap-1 mt-1 mb-1">Selected: {Array.isArray(existingBlogcategory) && existingBlogcategory.map(category => (
                     <span key={category}>{category}</span>
                 ))}</p>
-            </div>
+            </div> */}
 
             {/* blog Images */}
             <div className='w-100 flex flex-col flex-left mb-2'>
@@ -226,7 +226,7 @@ export default function Blog(
             </div>
 
             {/* tags */}
-            <div className='w-100 flex flex-col flex-left mb-2' data-aos="fade-up">
+            {/* <div className='w-100 flex flex-col flex-left mb-2' data-aos="fade-up">
                 <label htmlFor="tags">Tags (ctrl + leftclick for multiple select)</label>
                 <select onChange={(e) => setTags(Array.from(e.target.selectedOptions, option => option.value))} name="tags" id="tags" multiple value={tags}>
                     <option value="html">Html</option>
@@ -239,7 +239,7 @@ export default function Blog(
                 <p className="existingcategory flex gap-1 mt-1 mb-1">Selected: {existingTags && existingTags.length > 0 && (
                     <span>{existingTags.join(', ')}</span>
                 )}</p>
-            </div>
+            </div> */}
 
             {/* blog status */}
             <div className='w-100 flex flex-col flex-left mb-2' >

@@ -96,8 +96,7 @@ export default function projectslug() {
                     <div className="projectsluginfo">
                         <div className="leftmainproinfo">
                             <h1>{alldata && alldata[0]?.projectcategory}</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facere incidunt a quo ratione ad itaque, tenetur molestias tempora dolore cumque at enim alias esse similique deleniti sint labore repudiandae?</p>
-                            <a target="_blank" href={alldata && alldata[0]?.livepreview}>Live Preview</a>
+                        
                         </div>
                         <div className="rightmainproinfo">
                             <div>
@@ -114,7 +113,7 @@ export default function projectslug() {
                             </div>
                             <div>
                                 <h3>Designer</h3>
-                                <h2>vaibhav mak</h2>
+                                <h2>FENZI Melissa</h2>
                             </div>
                         </div>
                     </div>

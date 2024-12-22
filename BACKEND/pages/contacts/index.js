@@ -73,11 +73,10 @@ export default function contacts() {
                         <thead data-aos="fade-up">
                             <tr>
                                 <th>#</th>
-                                <th>First Name</th>
+                                <th>Name</th>
                                 <th>Email</th>
-                                <th>Phone no</th>
-                                <th>Project</th>
-                                <th>Open Contact </th>
+                                <th>Sibject</th>
+                                <th>Message</th>
                             </tr>
                         </thead>
                         <tbody data-aos="fade-up">
@@ -98,8 +97,8 @@ export default function contacts() {
                                             <td>{indexOfFirstblog + index + 1}</td>
                                             <td><h3>{blog.name}</h3></td>
                                             <td><h3>{blog.email}</h3></td>
-                                            <td><h3>{blog.phone}</h3></td>
-                                            <td><h3>{blog.project[0]}</h3></td>
+                                            <td><h3>{blog.subject}</h3></td>
+                                            <td><h3>{blog.message}</h3></td>
                                             <td>
                                                 <div className='flex gap-2 flex-center'>
                                                     <Link href={'/contacts/view/' + blog._id}><button title='edit'><FaEye />View</button></Link>
