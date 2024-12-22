@@ -331,8 +331,8 @@ const BlogPage = () => {
                                 <div className="slugbloginfopub">
                                     <div className="flex gap-2">
                                         <div className="adminslug">
-                                            <img src="/img/coder.jpg" alt="" />
-                                            <span>By Admin</span>
+                                            <img src="/img/melissa.png" alt="" />
+                                            <span>FENZI Melissa</span>
                                         </div>
                                         <div className="adminslug">
                                             <SlCalender />
@@ -350,23 +350,12 @@ const BlogPage = () => {
                                             <BsCopy /> <span>{copied ? 'Copied!' : ''}</span>
                                         </div>
 
-                                        {/* Facebook share button */}
-                                        <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(blogUrl)}`} target="_blank" rel="noopener noreferrer">
-                                            <RiFacebookFill />
-                                        </a>
+                                    
 
-                                        {/* Twitter share button */}
-                                        <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('Check out this blog post: ' + blogUrl)}`} target="_blank" rel="noopener noreferrer">
-                                            <FaTwitter />
-                                        </a>
 
-                                        {/* WhatsApp share button */}
-                                        <a href={`whatsapp://send?text=Check out this blog post: ${encodeURIComponent(blogUrl)}`} target="_blank" rel="noopener noreferrer">
-                                            <RiWhatsappFill />
-                                        </a>
 
                                         {/* LinkedIn share button */}
-                                        <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(blogUrl)}`} target="_blank" rel="noopener noreferrer">
+                                        <a href={`https://fr.linkedin.com/in/fenzi-melissa-b41275290/?url=${encodeURIComponent(blogUrl)}`} target="_blank" rel="noopener noreferrer">
                                             <BiLogoLinkedin />
                                         </a>
                                     </div>
@@ -385,7 +374,7 @@ const BlogPage = () => {
                                 </div>}
 
                                 <div className="blogslugtags">
-                                    <div className="blogstegs">
+                                    {/* <div className="blogstegs">
                                         <h2>Tags:</h2>
                                         <div className="flex flex-wrap gap-1">
                                             {blogData && blogData.blog.tags.map((cat) => {
@@ -396,9 +385,9 @@ const BlogPage = () => {
                                         <Link href='/'>Digital Marketing</Link>
                                         <Link href='/'>Fullter Dev</Link>
                                         <Link href='/'>React</Link>
-                                        <Link href='/'>Node js</Link> */}
+                                        <Link href='/'>Node js</Link> 
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="blogusecomments">
                                     <h2>Comments</h2>
@@ -450,7 +439,7 @@ const BlogPage = () => {
                                     <input onClick={handleSearchOpen} type="text" placeholder="Search..." />
                                     <button><FiSearch /></button>
                                 </div>
-                                <div className="rightslugcategory">
+                                {/* <div className="rightslugcategory">
                                     <h2>CATEGORIES</h2>
                                     <ul>
                                         <Link href='/blogs/category/Next Js'><li>Next Js <span>({allwork.filter(ab => ab.blogcategory[0] === "Next Js").length})</span></li></Link>
@@ -460,7 +449,7 @@ const BlogPage = () => {
                                         <Link href='/blogs/category/React js'><li>React js <span>({allwork.filter(ab => ab.blogcategory[0] === "React js").length})</span></li></Link>
                                         <Link href='/blogs/category/Flutter Dev'><li>Fullter Dev <span>({allwork.filter(ab => ab.blogcategory[0] === "Flutter Dev").length})</span></li></Link>
                                     </ul>
-                                </div>
+                                </div> */}
                                 <div className="rightrecentpost">
                                     <h2>RECENT POST</h2>
                                     {allwork.slice(0, 3).map((blog) => {
@@ -468,9 +457,9 @@ const BlogPage = () => {
                                             <img src={blog.images[0]} alt={blog.title} />
                                             <div>
                                                 <h3>{blog.title}</h3>
-                                                <h4 className="mt-1">{blog.tags.map((cat) => {
+                                                {/* <h4 className="mt-1">{blog.tags.map((cat) => {
                                                     return <span key={cat}>{cat}</span>
-                                                })}</h4>
+                                                })}</h4> */}
                                             </div>
                                         </Link>
                                     })}
