@@ -262,7 +262,7 @@ export default function Home() {
               </div>
               <div className="lead" data-aos="fade-up"  >Apprenante en deuxième année de BTS Services Informatiques aux Organisations (SIO) options en SLAM (Solutions Logicielles et Applications Métier) à l'école ESIC et en alternance avec MABINTECH SERVICE</div>
               <div className="hero_btn_box" data-aos="fade-up">
-                <Link href='/' download={'/img/resume.pdf'} className="download_cv">Download CV <BiDownload /></Link>
+                <Link href='/img/resume.pdf' download={'/img/resume.pdf'} className="download_cv">Download CV <BiDownload /></Link>
                 <ul className="hero_social">
                   <li><a href="https://fr.linkedin.com/in/fenzi-melissa-b41275290"><GrLinkedinOption /></a></li>
                   <li><a href="https://github.com/melfe28"><FaGithub /></a></li>

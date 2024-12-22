@@ -21,7 +21,7 @@ export default function ContactForm() {
         setMessageStatus("Sending...");
 
         try {
-            await axios.post('/api/contact', formData);
+            await axios.post('/api/contacts', formData);
             setMessageStatus("✅ Message sent successfully!");
             setFormData({
                 name: "",
