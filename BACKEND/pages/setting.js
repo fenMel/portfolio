@@ -39,7 +39,7 @@ export default function Setting() {
                         <div className="w-100" data-aos="fade-up">
                             <div className='flex flex-sb flex-left mt-2'>
                                 <h2>My Profile:</h2>
-                                <h3>Vbm Coder <br /> web developer</h3>
+                                <h3>FENZI Melissa <br /> web developer</h3>
                             </div>
                             <div className="flex flex-sb mt-2">
                                 <h3>Phone:</h3>

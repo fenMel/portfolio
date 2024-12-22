@@ -328,7 +328,7 @@ export default function Home() {
         <div className="container">
           <div className="project_titles">
             <h2 data-aos="fade-up">Mes Projets</h2>
-            <p data-aos="fade-up">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+            <p data-aos="fade-up">Voici l'ensemble des projets que j'ai realiser </p>
           </div>
           <div className="project_buttons" data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
@@ -527,8 +527,9 @@ export default function Home() {
       <section className="recentblogs">
         <div className="container">
           <div className="myskills_title">
-            <h2 data-aos="fade-up">veille technologique</h2>
-            <p data-aos="fade-up">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+            <h2 data-aos="fade-up">Veille technologique</h2>
+            <p data-aos="fade-up">J'ai choisi comme veille technologique le domaine de la cybersécurité. Ce choix s'explique par l'importance croissante de la protection des données et des systèmes dans un monde de plus en plus connecté</p>
+
           </div>
           <div className="recent_blogs">
             {allwork.slice(0, 3).map((blog) => {
@@ -537,7 +538,7 @@ export default function Home() {
                 data-aos-duration="2000">
                 <div className="re_blogimg">
                   <img src={blog.images[0] || '/img/noimage.png'} alt={blog.title} />
-                  <span>{blog.blogcategory[0]}</span>
+                  {/* <span>{blog.blogcategory[0]}</span> */}
                 </div>
                 <div className="re_bloginfo">
                   <div className="re_topdate flex gap-1">

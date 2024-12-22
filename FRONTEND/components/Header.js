@@ -84,16 +84,16 @@ export default function Header() {
                     <ul className="flex gap-2">
                         <li><Link href="/"
                             className={activeLink === '/' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/')}>Home</Link></li>
-                        <li><Link href="/services"
-                            className={activeLink === '/services' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/services')}>Services</Link></li>
+                            onClick={() => handleLinkClick('/')}>Accueil</Link></li>
+                        <li><Link href="/documents"
+                            className={activeLink === '/documents' ? 'active' : ''}
+                            onClick={() => handleLinkClick('/documents')}>Attestation & Rapport</Link></li>
                         <li><Link href="/projects"
                             className={activeLink === '/projects' ? 'active' : ''}
                             onClick={() => handleLinkClick('/projects')}>Projects</Link></li>
                         <li><Link href="/blogs"
                             className={activeLink === '/blogs' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/blogs')}>Blogs</Link></li>
+                            onClick={() => handleLinkClick('/blogs')}>Veille Technologies</Link></li>
                         {/* <li><Link href="/gallery"
                             className={activeLink === '/gallery' ? 'active' : ''}
                             onClick={() => handleLinkClick('/gallery')}>Gallery</Link></li>
