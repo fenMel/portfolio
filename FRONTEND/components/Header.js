@@ -84,30 +84,30 @@ export default function Header() {
                     <ul className="flex gap-2">
                         <li><Link href="/"
                             className={activeLink === '/' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/')}>Home</Link></li>
-                        <li><Link href="/services"
-                            className={activeLink === '/services' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/services')}>Services</Link></li>
+                            onClick={() => handleLinkClick('/')}>Accueil</Link></li>
+                        <li><Link href="/documents"
+                            className={activeLink === '/documents' ? 'active' : ''}
+                            onClick={() => handleLinkClick('/documents')}>Attestation & Rapport</Link></li>
                         <li><Link href="/projects"
                             className={activeLink === '/projects' ? 'active' : ''}
                             onClick={() => handleLinkClick('/projects')}>Projects</Link></li>
                         <li><Link href="/blogs"
                             className={activeLink === '/blogs' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/blogs')}>Blogs</Link></li>
+                            onClick={() => handleLinkClick('/blogs')}>Veille Technologies</Link></li>
                         {/* <li><Link href="/gallery"
                             className={activeLink === '/gallery' ? 'active' : ''}
                             onClick={() => handleLinkClick('/gallery')}>Gallery</Link></li>
                         <li><Link href="/shop"
                             className={activeLink === '/shop' ? 'active' : ''}
                             onClick={() => handleLinkClick('/shop')}>Shop</Link></li> */}
-                        <li><Link href="/contact"
+                        <button><Link href="/contact"
                             className={activeLink === '/contact' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/contact')}>Contact</Link></li>
+                            onClick={() => handleLinkClick('/contact')}>Contact</Link></button>
                     </ul>
-                    <div className="darkmodetoggle" onClick={toggleDarkMode}>
+                    {/* <div className="darkmodetoggle" onClick={toggleDarkMode}>
                         {darkMode ? <IoMoonSharp /> : <LuSun />}
-                    </div>
-                    <button><Link href='/contact'>Hire Me!</Link></button>
+                    </div> */}
+                    
                     <div className="mobiletogglesvg" onClick={handleMobileOpen}>
                         <HiMiniBars3BottomRight />
                     </div>
@@ -141,7 +141,7 @@ export default function Header() {
                             className={activeLink === '/contact' ? 'active' : ''}
                             onClick={() => handleLinkClick('/contact')}>Contact</Link></li>
                     </ul>
-                    <p>Copyright &copy; 2024 | vbmcoder.in</p>
+                    <p>Copyright &copy; 2024 | FenziMelissa</p>
                 </div>
             </nav>
         </header>

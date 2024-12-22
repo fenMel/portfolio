@@ -2,14 +2,9 @@ const { Schema, models, model } = require("mongoose");
 
 const ProjectSchema = new Schema({
     name: { type: String, required: true },
-    lname: { type: String },
     email: { type: String, required: true },
-    company: { type: String },
-    phone: { type: String, required: true},
-    country: { type: String },
-    project: [{ type: String }],
-    price: { type: String },
-    description: { type: String },
+    subject: { type: String, required: true },
+    message: { type: String, required: true},
 }, {
     timestamps: true // This option will automatically manage createdAt and updatedAt fields
 });

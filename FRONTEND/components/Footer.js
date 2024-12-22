@@ -11,12 +11,10 @@ export default function Footer() {
                     <img src="/img/logo.png" alt="" />
                 </div>
                 <ul className="flex gap-2">
-                    <li><Link href='/services'>Services</Link></li>
-                    <li><Link href='/services'>Works</Link></li>
-                    <li><Link href='/services'>Resume</Link></li>
-                    <li><Link href='/services'>Skills</Link></li>
-                    <li><Link href='/services'>Testimonials</Link></li>
-                    <li><Link href='/services'>Contact</Link></li>
+                    <li><Link href='/documents'>Attestation & Rapport</Link></li>
+                    <li><Link href='/Projects'>Projects</Link></li>
+                    <li><Link href='/blogs'>Veille technologique </Link></li>
+                    <li><Link href='/Contact'>Contact</Link></li>
                 </ul>
                 <ul className="hero_social">
                   <li><a target="_blank" href="https://fr.linkedin.com/in/fenzi-melissa-b41275290"><GrLinkedinOption /></a></li>
