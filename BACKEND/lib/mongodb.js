@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 
 // URI de connexion MongoDB (modifie en fonction de ta configuration)
-const uri = "mongodb://localhost:27017";
+const uri = "mongodb+srv://melissafenzifenzi:azerty123@protfoliofenzimelissa.v0e7s.mongodb.net/?retryWrites=true&w=majority&appName=protfolioFenziMelissa";
 
 // Fonction pour se connecter à la base de données
 async function connectToDatabase() {
