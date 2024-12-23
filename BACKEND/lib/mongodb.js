@@ -15,6 +15,7 @@ async function connectToDatabase() {
 
     console.log("✅ Connexion réussie à la base de données MongoDB !");
 
+
     // Retourne la base de données (change "protfolioFenziMelissa" selon ta configuration)
     return client.db("protfolioFenziMelissa");
   } catch (error) {
