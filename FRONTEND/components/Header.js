@@ -131,7 +131,7 @@ export default function Header() {
                         <li><Link href="/projects"
                             className={activeLink === '/projects' ? 'active' : ''}
                             onClick={() => handleLinkClick('/projects')}>Projects</Link></li>
-                         <li><Link href="/shop"
+                         <li><Link href="/documents"
                             className={activeLink === '/documents' ? 'active' : ''}
                             onClick={() => handleLinkClick('/documents')}>Attestation & Rapport</Link></li> 
                         <li><Link href="/contact"
