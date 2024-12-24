@@ -121,22 +121,22 @@ export default function Header() {
                     <ul className="flex gap-1 flex-col flex-left mt-3" onClick={handleMobileClose}>
                         <li><Link href="/"
                             className={activeLink === '/' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/')}>Home</Link></li>
+                            onClick={() => handleLinkClick('/')}>Accueil</Link></li>
                         <li><Link href="/blogs"
                             className={activeLink === '/blogs' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/blogs')}>Blogs</Link></li>
+                            onClick={() => handleLinkClick('/blogs')}>Veille Technologies</Link></li>
                         {/* <li><Link href="/gallery"
                             className={activeLink === '/gallery' ? 'active' : ''}
                             onClick={() => handleLinkClick('/gallery')}>Gallery</Link></li> */}
                         <li><Link href="/services"
-                            className={activeLink === '/services' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/services')}>Services</Link></li>
+                            className={activeLink === '/projects' ? 'active' : ''}
+                            onClick={() => handleLinkClick('/projects')}>Projects</Link></li>
                         <li><Link href="/projects"
                             className={activeLink === '/projects' ? 'active' : ''}
                             onClick={() => handleLinkClick('/projects')}>Projects</Link></li>
-                        {/* <li><Link href="/shop"
-                            className={activeLink === '/shop' ? 'active' : ''}
-                            onClick={() => handleLinkClick('/shop')}>Shop</Link></li> */}
+                         <li><Link href="/shop"
+                            className={activeLink === '/documents' ? 'active' : ''}
+                            onClick={() => handleLinkClick('/documents')}>Attestation & Rapport</Link></li> 
                         <li><Link href="/contact"
                             className={activeLink === '/contact' ? 'active' : ''}
                             onClick={() => handleLinkClick('/contact')}>Contact</Link></li>
